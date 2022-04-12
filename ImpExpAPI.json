@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "97b1c83f-1866-4b27-9b93-62c89ca41a40",
+		"name": "ImpExpAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "Export Application",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "YoDeS7vvALgSnRYIlbaLpg..",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "kkBhk0rdp8SCBhyV3k9NNQ..",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.11.201.82:8080/cblagent/services/deploy/app/110",
+							"protocol": "http",
+							"host": [
+								"10",
+								"11",
+								"201",
+								"82"
+							],
+							"port": "8080",
+							"path": [
+								"cblagent",
+								"services",
+								"deploy",
+								"app",
+								"110"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export Application Page",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "YoDeS7vvALgSnRYIlbaLpg..",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "kkBhk0rdp8SCBhyV3k9NNQ..",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "PAGE:2"
+						},
+						"url": {
+							"raw": "http://10.11.201.82:8080/cblagent/services/deploy/app/110/components",
+							"protocol": "http",
+							"host": [
+								"10",
+								"11",
+								"201",
+								"82"
+							],
+							"port": "8080",
+							"path": [
+								"cblagent",
+								"services",
+								"deploy",
+								"app",
+								"110",
+								"components"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Import Application",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "YoDeS7vvALgSnRYIlbaLpg..",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "kkBhk0rdp8SCBhyV3k9NNQ..",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "tapplication/octet-stream",
+								"type": "default"
+							},
+							{
+								"key": "X-Target-Workspace",
+								"value": "1400484024213076",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": "110.sql"
+							}
+						},
+						"url": {
+							"raw": "http://10.11.201.82:8080/cblagent/services/deploy/app/111/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"11",
+								"201",
+								"82"
+							],
+							"port": "8080",
+							"path": [
+								"cblagent",
+								"services",
+								"deploy",
+								"app",
+								"111",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Import Application Page or Other Component",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://10.11.201.82:8080/cblagent/services/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "YoDeS7vvALgSnRYIlbaLpg..",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "kkBhk0rdp8SCBhyV3k9NNQ..",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "tapplication/octet-stream",
+								"type": "default"
+							},
+							{
+								"key": "X-Target-Workspace",
+								"value": "1400484024213076",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": "110_page_2.sql"
+							}
+						},
+						"url": {
+							"raw": "http://10.11.201.82:8080/cblagent/services/deploy/app/111/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"11",
+								"201",
+								"82"
+							],
+							"port": "8080",
+							"path": [
+								"cblagent",
+								"services",
+								"deploy",
+								"app",
+								"111",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
